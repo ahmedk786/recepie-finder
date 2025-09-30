@@ -1,0 +1,111 @@
+/* Global reset */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* App container */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff6b6b, #f06595);
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header .tagline {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Container */
+.container {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Searchbar */
+.searchbar {
+  margin-bottom: 20px;
+}
+
+/* Recipe grid */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+/* Recipe card */
+.recipe-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  margin: 12px;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 12px;
+  background: #f1f1f1;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+  .header .tagline {
+    font-size: 0.9rem;
+  }
+  .recipe-card h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.3rem;
+  }
+  .header .tagline {
+    font-size: 0.8rem;
+  }
+  .container {
+    padding: 12px;
+  }
+}
